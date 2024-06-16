@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film Listesi</title>
+  <link rel="stylesheet" href="assets/css/film.css">
+  <script src="assets/js/film.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <form class="contact-form">
+      <h2>Film Listesi</h2>
+
+      <div class="form-group">
+        <label for="name">Film Adı:</label>
+        <input required type="text" id="name" name="name">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Puan:</label>
+        <input required type="number" id="number" name="number">
+      </div>
+
+      <div class="form-group">
+        <label for="aciklama">Açıklama:</label>
+        <textarea id="aciklama" name="aciklama" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="category">Kategori:</label>
+        <select id="category" name="category" required>
+            <option value="teknoloji">Komedi</option>
+            <option value="korku">Romatik</option>
+            <option value="saglik">Gerilim</option>
+            <option value="gezi">Aksiyon</option>
+            <option value="yemek">Bilim Kurgu</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="resim">Görsel URL:</label>
+        <input type="text" id="resim" name="resim">
+      </div>
+
+      <button type="submit">ekle</button>
+    </form>
+    <button class="silme">silme</button>
+    <div class="teknoloji">
+      <h1>Komedi</h1>
+    </div>
+    <div class="korku">
+      <h1>Romatik</h1>
+    </div>
+    <div class="saglik">
+      <h1>Gerilim</h1>
+    </div>
+    <div class="gezi">
+      <h1>Aksiyon</h1>
+    </div>
+    <div class="yemek">
+      <h1>Bilim Kurgu</h1>
+    </div>
+    
+  </div>
+</body>
+</html>
